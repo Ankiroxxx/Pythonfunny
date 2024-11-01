@@ -4,9 +4,9 @@ import pyttsx3
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 rate = engine.getProperty('rate')
-engine.setProperty('rate', rate-200)
+engine.setProperty('rate', rate-300)
 volume = engine.getProperty('volume')
-engine.setProperty('volume', volume+0.50)
+engine.setProperty('volume', 1.0)
 engine.setProperty('voice', voices[1].id)
 a =  ["accapareur","aérolithe","amiral de bateau-lavoir","amphitryon","anacoluthe","analphabète","analphabète diplômé","animal","anthracite","anthropophage","anthropopithèque","apache","apophtegme","apprenti-dictateur à la noix de coco","arlequin","ascenseur","astronaute d'eau douce","athlète complet","autocrate","autodidacte","aztèques"]
 bb = ["babouin","bachi-bouzouk","bachi-bouzouk de tonnerre de Brest","bachi-bouzouk des Carpathes","bande de jeunes effrontés","bande de joyeux drilles","bande d'ectoplasmes de tonnerre de Brest",\
@@ -157,7 +157,6 @@ ii = [
     "invertébré",
     "isotope",
     "ivrogne",
-    "I'm Monkey D. Luffy and I will become king of the pirates "
 ]
 j = [
     "jet d'eau ambulant",
@@ -275,7 +274,14 @@ m2 = [
     "mille millions de tonnerre de Brest",
     "mille sabords",
     "mille tonnerres",
-    "mille tonnerres de Brest"
+    "mille tonnerres de Brest",
+    "I'm Monkey D. Luffy and I will become king of the pirates ",
+    "I'm Monkey D. Luffy and I will become king of the pirates ",
+    "I'm Monkey D. Luffy and I will become king of the pirates ",
+    "I'm Monkey D. Luffy and I will become king of the pirates ",
+    "Yee-ha",
+    "Yee-ha",
+    "Yee-ha"
 ]
 o = [
     "olibrius",
@@ -423,8 +429,7 @@ v = [
     "voleur d'enfants"
 ]
 w = [
-    "wisigoths",
-    "Yee-haaaa"
+    "wisigoths"
 ]
 z = [
     "zapothèques",
@@ -440,7 +445,7 @@ c = input("Combien de jurons veux-tu ? ")
 d = int(c)
 for i in range(0, d):
     b = random.randint(1, len(a)+len(bb))
-    sele = random.randint(1, 26)
+    sele = random.randint(1, 27)
     if sele == 2:
         b = random.randint(0, len(bb)-1)
         y = ("espèce de " + bb[b]+ "!")
@@ -544,6 +549,10 @@ for i in range(0, d):
     if sele == 26:
         b = random.randint(0, (len(z)-1))
         y = ("espèce de " + z[b]+ "!")
+        print(y)
+    if sele == 27:
+        b = random.randint(0, (len(m2)-1))
+        y = (m2[b]+ "!")
         print(y)
     engine.say(y)
     engine.runAndWait()
