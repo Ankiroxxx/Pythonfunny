@@ -41,6 +41,8 @@ cc = [
     "coupe-jarret",
     "cow-boy de la route",
     "crème d'emplâtre à la graisse de hérisson",
+    "crème d'emplâtre à la graisse de hérisson",
+    "crème d'emplâtre à la graisse de hérisson",
     "crétin de l'Himalaya",
     "crétin des Alpes",
     "crétin des Balkans",
@@ -70,6 +72,8 @@ e1 = [
     "égoïste",
     "électron",
     "emplâtre",
+    "emplâtré à la graisse de hérisson",
+    "emplâtré à la graisse de hérisson",
     "emplâtré à la graisse de hérisson",
     "empoisonneur",
     "encordé",
@@ -165,6 +169,7 @@ l = [
     "lascar",
     "lépidoptère",
     "logarithme",
+    "loup-garou à la graisse de renoncule de mille tonnerres de Brest"
     "loup-garou à la graisse de renoncule de mille tonnerres de Brest"
 ]
 m1 = [
