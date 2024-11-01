@@ -1,5 +1,11 @@
 import random
 import time
+import pyttsx3
+engine = pyttsx3.init()
+language = 'fr'
+engine.setProperty('language', 'fr')
+engine.setProperty('rate', 125)
+engine.setProperty('volume',1.0)
 a =  ["accapareur","aérolithe","amiral de bateau-lavoir","amphitryon","anacoluthe","analphabète","analphabète diplômé","animal","anthracite","anthropophage","anthropopithèque","apache","apophtegme","apprenti-dictateur à la noix de coco","arlequin","ascenseur","astronaute d'eau douce","athlète complet","autocrate","autodidacte","aztèques"]
 bb = ["babouin","bachi-bouzouk","bachi-bouzouk de tonnerre de Brest","bachi-bouzouk des Carpathes","bande de jeunes effrontés","bande de joyeux drilles","bande d'ectoplasmes de tonnerre de Brest",\
     "bande d'emplâtres","bande d'enragés","bande d'escrocs","bande d'hurluberlus","bande de bachi-bouzouks","bande de brutes","bande de canaques","bande de Ku-Klux-Klans","bande de pirates","bande de sauvages","bande de voleurs","bande de zapotèques de tonnerre de Brest","bandit","bayadère de carnaval","bibelot","bibendum","bidule","blague, fumisterie et compagnie","boit-sans-soif","bombe atomique","bonhomme","bougre d'ectoplasme à roulettes","bougre d'ectoplasme de moule à gaufres","bougre d'amiral de bateau-lavoir","bougre de crème d'emplâtre à la graisse de hérisson","bougre d'extrait de cornichon","bougre d'extrait de crétin des Alpes","bougre d'extrait d'hydrocarbure","bougres de faux jetons à la sauce tartare","bougre de méchant Blanc","bougre de mouchard","bougre d'olibrius","bougre d\'ostrogoth","bougre de papou des Carpathes","bougre de petit cornichon","bougre de phénomène de tonnerre de Brest","bougre de phénomène de moule à gaufres de tonnerre de Brest","bougre de sauvage d'aérolithe de tonnerre de Brest","bougre de zouave","bougres de zouaves d'anthropopithèques","brigand","brontosaure","brute","bulldozer à réaction"]
@@ -104,7 +110,7 @@ f = [
     "fichue espagnolette",
     "fichue fusée de tonnerre de Brest",
     "fieffé menteur",
-    "fiston",
+    "fiston à son papa ouin ouin !!",
     "flibustier",
     "flibustier de carnaval",
     "flûte",
@@ -429,84 +435,112 @@ z = [
 c = input("Combien de jurons veux-tu ? ")
 d = int(c)
 for i in range(0, d):
-    time.sleep(1)
+    time.sleep(5)
     b = random.randint(1, len(a)+len(bb))
     sele = random.randint(1, 26)
     if sele == 2:
         b = random.randint(0, len(bb)-1)
-        print("espèce de " + bb[b]+ "!")
+        y = ("espèce de " + bb[b]+ "!")
+        print(y)
     if sele == 1:
         b = random.randint(0, (len(a)-1))
-        print("espèce d'" + a[b]+ "!")
+        y = ("espèce d'" + a[b]+ "!")
+        print(y)
     if sele == 3:
         b = random.randint(0, len(cc)-1)
-        print("espèce de " + cc[b]+ "!")
+        y = ("espèce de " + cc[b]+ "!")
+        print(y)
     if sele == 4:
         b = random.randint(0, len(dd)-1)
-        print("espèce de " + dd[b]+ "!")
+        y = ("espèce de " + dd[b]+ "!")
+        print(y)
     if sele == 5:
         b = random.randint(0, (len(e1)-1))
-        print("espèce d'" + e1[b]+ "!")
+        y = ("espèce d'" + e1[b]+ "!")
+        print(y)
     if sele == 6:
         b = random.randint(0, 1)
-        print(e2[b]+ "!")
+        y = (e2[b]+ "!")
+        print(y)
     if sele == 7:
         b = random.randint(0, (len(f)-1))
-        print("espèce de " + f[b]+ "!")
+        y = ("espèce de " + f[b]+ "!")
+        print(y)
     if sele == 8:
         b = random.randint(0, (len(g)-1))
-        print("espèce de " + g[b]+ "!")
+        y = ("espèce de " + g[b]+ "!")
+        print(y)
     if sele == 9:
         b = random.randint(0, (len(h1)-1))
-        print("espèce d'" + h1[b]+ "!")
+        y = ("espèce d'" + h1[b]+ "!")
+        print(y)
     if sele == 10:
         b = random.randint(0, (len(h2)-1))
-        print("espèce de " + h2[b]+ "!")
+        y = ("espèce de " + h2[b]+ "!")
+        print(y)
     if sele == 11:
         b = random.randint(0, (len(ii)-1))
-        print("espèce d'" + ii[b]+ "!")
+        y = ("espèce d'" + ii[b]+ "!")
+        print(y)
     if sele == 12:
         b = random.randint(0, (len(j)-1))
-        print("espèce de " + j[b]+ "!")
+        y = ("espèce de " + j[b]+ "!")
+        print(y)
     if sele == 13:
         b = random.randint(0, (len(k)-1))
-        print("espèce de " + k[b]+ "!")
+        y = ("espèce de " + k[b]+ "!")
+        print(y)
     if sele == 14:
         b = random.randint(0, (len(l)-1))
-        print("espèce de " + l[b]+ "!")
+        y = ("espèce de " + l[b]+ "!")
+        print(y)
     if sele == 15:
         b = random.randint(0, (len(m1)-1))
-        print("espèce de " + m1[b]+ "!")
+        y = ("espèce de " + m1[b]+ "!")
+        print(y)
     if sele == 16:
         b = random.randint(0, (len(m2)-1))
-        print(m2[b]+ "!")
+        y = (m2[b]+ "!")
+        print(y)
     if sele == 17:
         b = random.randint(0, (len(n)-1))
-        print("espèce de " + n[b]+ "!")
+        y = ("espèce de " + n[b]+ "!")
+        print(y)
     if sele == 18:
         b = random.randint(0, (len(o)-1))
-        print("espèce d'" + o[b]+ "!")
+        y = ("espèce d'" + o[b]+ "!")
+        print(y)
     if sele == 19:
         b = random.randint(0, (len(p)-1))
-        print("espèce de " + p[b]+ "!")
+        y = ("espèce de " + p[b]+ "!")
+        print(y)
     if sele == 20:
         b = random.randint(0, (len(q)-1))
-        print(q[b]+ "!")
+        y = (q[b]+ "!")
+        print(y)
     if sele == 21:
         b = random.randint(0, (len(r)-1))
-        print("espèce de " + r[b]+ "!")
+        y = ("espèce de " + r[b]+ "!")
+        print(y)
     if sele == 22:
         b = random.randint(0, (len(s)-1))
-        print(s[b]+ "!")
+        y = (s[b]+ "!")
+        print(y)
     if sele == 23:
         b = random.randint(0, (len(t)-1))
-        print("espèce de " + t[b]+ "!")
+        y = ("espèce de " + t[b]+ "!")
+        print(y)
     if sele == 24:
         b = random.randint(0, (len(v)-1))
-        print("espèce de " + v[b]+ "!")
+        y = ("espèce de " + v[b]+ "!")
+        print(y)
     if sele == 25:
         b = random.randint(0, (len(w)-1))
-        print("espèces de " + w[b]+ "!")
+        y = ("espèces de " + w[b]+ "!")
+        print(y)
     if sele == 26:
         b = random.randint(0, (len(z)-1))
-        print("espèce de " + z[b]+ "!")
+        y = ("espèce de " + z[b]+ "!")
+        print(y)
+    engine.say(y)
+    engine.runAndWait()
