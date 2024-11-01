@@ -2,10 +2,12 @@ import random
 import time
 import pyttsx3
 engine = pyttsx3.init()
-language = 'fr'
-engine.setProperty('language', 'fr')
-engine.setProperty('rate', 125)
-engine.setProperty('volume',1.0)
+voices = engine.getProperty('voices')
+rate = engine.getProperty('rate')
+engine.setProperty('rate', rate-200)
+volume = engine.getProperty('volume')
+engine.setProperty('volume', volume+0.50)
+engine.setProperty('voice', voices[1].id)
 a =  ["accapareur","aérolithe","amiral de bateau-lavoir","amphitryon","anacoluthe","analphabète","analphabète diplômé","animal","anthracite","anthropophage","anthropopithèque","apache","apophtegme","apprenti-dictateur à la noix de coco","arlequin","ascenseur","astronaute d'eau douce","athlète complet","autocrate","autodidacte","aztèques"]
 bb = ["babouin","bachi-bouzouk","bachi-bouzouk de tonnerre de Brest","bachi-bouzouk des Carpathes","bande de jeunes effrontés","bande de joyeux drilles","bande d'ectoplasmes de tonnerre de Brest",\
     "bande d'emplâtres","bande d'enragés","bande d'escrocs","bande d'hurluberlus","bande de bachi-bouzouks","bande de brutes","bande de canaques","bande de Ku-Klux-Klans","bande de pirates","bande de sauvages","bande de voleurs","bande de zapotèques de tonnerre de Brest","bandit","bayadère de carnaval","bibelot","bibendum","bidule","blague, fumisterie et compagnie","boit-sans-soif","bombe atomique","bonhomme","bougre d'ectoplasme à roulettes","bougre d'ectoplasme de moule à gaufres","bougre d'amiral de bateau-lavoir","bougre de crème d'emplâtre à la graisse de hérisson","bougre d'extrait de cornichon","bougre d'extrait de crétin des Alpes","bougre d'extrait d'hydrocarbure","bougres de faux jetons à la sauce tartare","bougre de méchant Blanc","bougre de mouchard","bougre d'olibrius","bougre d\'ostrogoth","bougre de papou des Carpathes","bougre de petit cornichon","bougre de phénomène de tonnerre de Brest","bougre de phénomène de moule à gaufres de tonnerre de Brest","bougre de sauvage d'aérolithe de tonnerre de Brest","bougre de zouave","bougres de zouaves d'anthropopithèques","brigand","brontosaure","brute","bulldozer à réaction"]
@@ -154,7 +156,8 @@ ii = [
     "individu de général de tonnerre de Brest",
     "invertébré",
     "isotope",
-    "ivrogne"
+    "ivrogne",
+    "I'm Monkey D. Luffy and I will become king of the pirates "
 ]
 j = [
     "jet d'eau ambulant",
@@ -175,7 +178,7 @@ l = [
     "lascar",
     "lépidoptère",
     "logarithme",
-    "loup-garou à la graisse de renoncule de mille tonnerres de Brest"
+    "loup-garou à la graisse de renoncule de mille tonnerres de Brest",
     "loup-garou à la graisse de renoncule de mille tonnerres de Brest"
 ]
 m1 = [
@@ -420,7 +423,8 @@ v = [
     "voleur d'enfants"
 ]
 w = [
-    "wisigoths"
+    "wisigoths",
+    "Yee-haaaa"
 ]
 z = [
     "zapothèques",
@@ -435,7 +439,6 @@ z = [
 c = input("Combien de jurons veux-tu ? ")
 d = int(c)
 for i in range(0, d):
-    time.sleep(5)
     b = random.randint(1, len(a)+len(bb))
     sele = random.randint(1, 26)
     if sele == 2:
