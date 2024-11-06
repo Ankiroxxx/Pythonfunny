@@ -4,9 +4,9 @@ import pyttsx3
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 rate = engine.getProperty('rate')
-engine.setProperty('rate', rate-300)
+engine.setProperty('rate', '200')
 volume = engine.getProperty('volume')
-engine.setProperty('volume', 1.0)
+engine.setProperty('volume', '2')
 engine.setProperty('voice', voices[1].id)
 a =  ["accapareur","aérolithe","amiral de bateau-lavoir","amphitryon","anacoluthe","analphabète","analphabète diplômé","animal","anthracite","anthropophage","anthropopithèque","apache","apophtegme","apprenti-dictateur à la noix de coco","arlequin","ascenseur","astronaute d'eau douce","athlète complet","autocrate","autodidacte","aztèques"]
 bb = ["babouin","bachi-bouzouk","bachi-bouzouk de tonnerre de Brest","bachi-bouzouk des Carpathes","bande de jeunes effrontés","bande de joyeux drilles","bande d'ectoplasmes de tonnerre de Brest",\
@@ -66,7 +66,6 @@ dd = [
     "diable",
     "diable de zouave",
     "diablesse",
-    "dieu soit loué",
     "diplodocus",
     "doryphore",
     "doux agneaux",
@@ -236,7 +235,6 @@ m1 = [
     "marchand de tapis",
     "marin d'eau douce",
     "marmotte male réveillée",
-    "mazette",
     "mégacycle",
     "mégalomane",
     "mercanti",
@@ -264,6 +262,7 @@ m1 = [
 m2 = [
     "mille milliards de mille millions de mille sabords",
     "mille milliards de mille sabords",
+    "mazette",
     "mille milliards de mille sabords de tonnerre de Brest",
     "mille milliards de tonnerre de Brest",
     "mille millions de mille milliards de mille sabords",
@@ -281,7 +280,8 @@ m2 = [
     "I'm Monkey D. Luffy and I will become king of the pirates ",
     "Yee-ha",
     "Yee-ha",
-    "Yee-ha"
+    "Yee-ha",
+    "dieu soit loué"
 ]
 o = [
     "olibrius",
@@ -450,109 +450,136 @@ for i in range(0, d):
         b = random.randint(0, len(bb)-1)
         y = ("espèce de " + bb[b]+ "!")
         print(y)
+        del bb[b]
     if sele == 1:
         b = random.randint(0, (len(a)-1))
         y = ("espèce d'" + a[b]+ "!")
         print(y)
+        del a[b]
     if sele == 3:
         b = random.randint(0, len(cc)-1)
         y = ("espèce de " + cc[b]+ "!")
         print(y)
+        del cc[b]
     if sele == 4:
         b = random.randint(0, len(dd)-1)
         y = ("espèce de " + dd[b]+ "!")
         print(y)
+        del dd[b]
     if sele == 5:
         b = random.randint(0, (len(e1)-1))
         y = ("espèce d'" + e1[b]+ "!")
         print(y)
+        del e1[b]
     if sele == 6:
         b = random.randint(0, 1)
         y = (e2[b]+ "!")
         print(y)
+        del e2[b]
     if sele == 7:
         b = random.randint(0, (len(f)-1))
         y = ("espèce de " + f[b]+ "!")
         print(y)
+        del f[b]
     if sele == 8:
         b = random.randint(0, (len(g)-1))
         y = ("espèce de " + g[b]+ "!")
         print(y)
+        del g[b]
     if sele == 9:
         b = random.randint(0, (len(h1)-1))
         y = ("espèce d'" + h1[b]+ "!")
         print(y)
+        del h1[b]
     if sele == 10:
         b = random.randint(0, (len(h2)-1))
         y = ("espèce de " + h2[b]+ "!")
         print(y)
+        del h2[b]
     if sele == 11:
         b = random.randint(0, (len(ii)-1))
         y = ("espèce d'" + ii[b]+ "!")
         print(y)
+        del ii[b]
     if sele == 12:
         b = random.randint(0, (len(j)-1))
         y = ("espèce de " + j[b]+ "!")
         print(y)
+        del j[b]
     if sele == 13:
         b = random.randint(0, (len(k)-1))
         y = ("espèce de " + k[b]+ "!")
         print(y)
+        del k[b]
     if sele == 14:
         b = random.randint(0, (len(l)-1))
         y = ("espèce de " + l[b]+ "!")
         print(y)
+        del l[b]
     if sele == 15:
         b = random.randint(0, (len(m1)-1))
         y = ("espèce de " + m1[b]+ "!")
         print(y)
+        del m1[b]
     if sele == 16:
         b = random.randint(0, (len(m2)-1))
         y = (m2[b]+ "!")
         print(y)
+        del m2[b]
     if sele == 17:
         b = random.randint(0, (len(n)-1))
         y = ("espèce de " + n[b]+ "!")
         print(y)
+        del n[b]
     if sele == 18:
         b = random.randint(0, (len(o)-1))
         y = ("espèce d'" + o[b]+ "!")
         print(y)
+        del o[b]
     if sele == 19:
         b = random.randint(0, (len(p)-1))
         y = ("espèce de " + p[b]+ "!")
         print(y)
+        del p[b]
     if sele == 20:
         b = random.randint(0, (len(q)-1))
         y = (q[b]+ "!")
         print(y)
+        del q[b]
     if sele == 21:
         b = random.randint(0, (len(r)-1))
         y = ("espèce de " + r[b]+ "!")
         print(y)
+        del r[b]
     if sele == 22:
         b = random.randint(0, (len(s)-1))
         y = (s[b]+ "!")
         print(y)
+        del s[b]
     if sele == 23:
         b = random.randint(0, (len(t)-1))
         y = ("espèce de " + t[b]+ "!")
         print(y)
+        del t[b]
     if sele == 24:
         b = random.randint(0, (len(v)-1))
         y = ("espèce de " + v[b]+ "!")
         print(y)
+        del v[b]
     if sele == 25:
         b = random.randint(0, (len(w)-1))
         y = ("espèces de " + w[b]+ "!")
         print(y)
+        del w[b]
     if sele == 26:
         b = random.randint(0, (len(z)-1))
         y = ("espèce de " + z[b]+ "!")
         print(y)
+        del z[b]
     if sele == 27:
         b = random.randint(0, (len(m2)-1))
         y = (m2[b]+ "!")
         print(y)
+        del m2[b]
     engine.say(y)
     engine.runAndWait()
